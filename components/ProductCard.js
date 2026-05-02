@@ -1,21 +1,13 @@
+'use client';
+
 export default function ProductCard({ name, price, description }) {
   return (
     <div style={{
       background: "#FFFFFF",
       borderRadius: "2px",
       overflow: "hidden",
-      transition: "transform 0.2s, box-shadow 0.2s",
       cursor: "pointer",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = "translateY(-4px)";
-      e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.1)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = "translateY(0)";
-      e.currentTarget.style.boxShadow = "none";
-    }}
-    >
+    }}>
       {/* Product Image Placeholder */}
       <div style={{
         height: "260px",
